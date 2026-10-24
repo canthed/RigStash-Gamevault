@@ -1,0 +1,21 @@
+{
+  "name": "rigstash",
+  "version": "1.0.0",
+  "description": "RigStash: all your PC games in one place",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder"
+  },
+  "build": {
+    "appId": "com.rigstash.app",
+    "productName": "RigStash",
+    "win": { "target": "nsis" },
+    "mac": { "target": "dmg" },
+    "linux": { "target": "AppImage" }
+  },
+  "devDependencies": {
+    "electron": "^33.2.0",
+    "electron-builder": "^25.1.8"
+  }
+}
